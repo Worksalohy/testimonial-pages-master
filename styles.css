@@ -1,0 +1,162 @@
+body{
+    height: 98vh;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+li{
+    font-size: 0.875rem;
+}
+
+h1{
+    font-size: 2.25rem;
+    color: #18181b;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+p{
+    color: #52525a;
+}
+
+/* ALL CONTAINER */
+.container{
+    display: grid;
+    grid-template: 50% / 50%;
+}
+
+.left{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.right{
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.first, .second, .third{
+    display: flex;
+    gap: 8px;
+    
+}
+
+.first > p, .second > p, .third > p{
+    margin: 5px;
+}
+
+.one-star, .two-star{
+    margin-bottom: 6px;
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F5C044;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-image, .two-image{
+    width: 85px;
+    height: auto;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.card-one{
+    margin-left: 30%;
+}
+
+.card-one, .card-two{
+    width: 265px;
+    height: 180px;
+    background-color: white;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+.card-title{
+    color: #18181b;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.for-body{
+    font-size: 1.25rem;
+    line-height: 35px;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left{
+        width: 100%;
+        margin: 38px 0px 0px 40px;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-one{
+        margin-left: 180px;
+    }
+
+    .card-two{
+        margin-right: 180px;
+    }
+
+    .for-body{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .left{
+        margin: 5px;
+    }
+
+    .right{
+        margin: 5px;
+        padding: 0px;
+        align-items: normal;
+    }
+
+    .card-one, .card-two{
+        margin: 0px;
+        padding: 0px 20px 0px 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .for-body{
+        margin-right: 20px;
+    }
+}
